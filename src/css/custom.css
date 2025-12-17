@@ -1,43 +1,44 @@
 /**
- * Custom CSS for When Models Think Wrong book
+ * Neon Futuristic Theme for Physical AI & Humanoid Robotics
  *
  * Color scheme:
- * - Blues (#2196F3): Concept explanations
- * - Greens (#4CAF50): Examples and success
- * - Reds (#F44336): Warnings and errors
+ * - Cyan (#00ffff): Primary interactions and tech
+ * - Magenta (#ff00ff): Accents and highlights
+ * - Electric Blue (#0080ff): Secondary elements
+ * - Lime (#00ff00): Success and examples
  */
 
 :root {
-  /* Primary brand colors */
-  --ifm-color-primary: #2196F3;
-  --ifm-color-primary-dark: #1e88e5;
-  --ifm-color-primary-darker: #1976d2;
-  --ifm-color-primary-darkest: #1565c0;
-  --ifm-color-primary-light: #42a5f5;
-  --ifm-color-primary-lighter: #64b5f6;
-  --ifm-color-primary-lightest: #90caf9;
+  /* Neon Primary Colors */
+  --ifm-color-primary: #00ffff;
+  --ifm-color-primary-dark: #00e6e6;
+  --ifm-color-primary-darker: #00cccc;
+  --ifm-color-primary-darkest: #00b3b3;
+  --ifm-color-primary-light: #33ffff;
+  --ifm-color-primary-lighter: #66ffff;
+  --ifm-color-primary-lightest: #99ffff;
 
-  /* Success (green for examples) */
-  --ifm-color-success: #4CAF50;
-  --ifm-color-success-dark: #43a047;
-  --ifm-color-success-darker: #388e3c;
-  --ifm-color-success-darkest: #2e7d32;
-  --ifm-color-success-light: #66bb6a;
-  --ifm-color-success-lighter: #81c784;
-  --ifm-color-success-lightest: #a5d6a7;
+  /* Neon Success (lime green) */
+  --ifm-color-success: #00ff00;
+  --ifm-color-success-dark: #00e600;
+  --ifm-color-success-darker: #00cc00;
+  --ifm-color-success-darkest: #00b300;
+  --ifm-color-success-light: #33ff33;
+  --ifm-color-success-lighter: #66ff66;
+  --ifm-color-success-lightest: #99ff99;
 
-  /* Danger (red for warnings) */
-  --ifm-color-danger: #F44336;
-  --ifm-color-danger-dark: #e53935;
-  --ifm-color-danger-darker: #d32f2f;
-  --ifm-color-danger-darkest: #c62828;
-  --ifm-color-danger-light: #ef5350;
-  --ifm-color-danger-lighter: #e57373;
-  --ifm-color-danger-lightest: #ef9a9a;
+  /* Neon Danger (hot pink) */
+  --ifm-color-danger: #ff00ff;
+  --ifm-color-danger-dark: #e600e6;
+  --ifm-color-danger-darker: #cc00cc;
+  --ifm-color-danger-darkest: #b300b3;
+  --ifm-color-danger-light: #ff33ff;
+  --ifm-color-danger-lighter: #ff66ff;
+  --ifm-color-danger-lightest: #ff99ff;
 
-  /* Font settings */
-  --ifm-font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-  --ifm-font-family-monospace: 'Fira Code', 'Courier New', monospace;
+  /* Futuristic Font settings */
+  --ifm-font-family-base: 'Rajdhani', 'Orbitron', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --ifm-font-family-monospace: 'Share Tech Mono', 'Fira Code', 'Courier New', monospace;
   --ifm-font-size-base: 16px;
   --ifm-line-height-base: 1.65;
 
@@ -46,29 +47,38 @@
   --ifm-heading-margin-bottom: 0.75rem;
   --ifm-heading-margin-top: 1.5rem;
 
-  /* Code block styling */
-  --docusaurus-highlighted-code-line-bg: rgba(33, 150, 243, 0.1);
+  /* Code block styling with neon glow */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 255, 255, 0.1);
 }
 
-/* Dark mode */
+/* Dark mode - Enhanced Neon Cyberpunk */
 [data-theme='dark'] {
-  --ifm-color-primary: #64b5f6;
-  --ifm-color-primary-dark: #42a5f5;
-  --ifm-color-primary-darker: #2196F3;
-  --ifm-color-primary-darkest: #1e88e5;
-  --ifm-color-primary-light: #90caf9;
-  --ifm-color-primary-lighter: #bbdefb;
-  --ifm-color-primary-lightest: #e3f2fd;
+  --ifm-color-primary: #00ffff;
+  --ifm-color-primary-dark: #00e6e6;
+  --ifm-color-primary-darker: #00cccc;
+  --ifm-color-primary-darkest: #00b3b3;
+  --ifm-color-primary-light: #33ffff;
+  --ifm-color-primary-lighter: #66ffff;
+  --ifm-color-primary-lightest: #99ffff;
 
-  --docusaurus-highlighted-code-line-bg: rgba(100, 181, 246, 0.15);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 255, 255, 0.15);
+
+  /* Deep space background */
+  --ifm-background-color: #000000;
+  --ifm-background-surface-color: #0a0a0a;
 }
 
-/* Typography improvements for readability */
+/* Typography with Neon Glow Effects */
 .markdown h1 {
   font-size: 2.25rem;
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8),
+               0 0 20px rgba(0, 255, 255, 0.6),
+               0 0 30px rgba(0, 255, 255, 0.4);
+  letter-spacing: 0.5px;
 }
 
 .markdown h2 {
@@ -77,7 +87,10 @@
   margin-top: 2rem;
   margin-bottom: 0.75rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+  border-bottom: 2px solid #00ffff;
+  color: #00ffff;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.3);
 }
 
 .markdown h3 {
@@ -85,11 +98,14 @@
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+  color: #ff00ff;
+  text-shadow: 0 0 8px rgba(255, 0, 255, 0.6);
 }
 
 .markdown p {
   margin-bottom: 1.25rem;
   line-height: 1.7;
+  color: #e0e0e0;
 }
 
 /* Reading progress indicator styling */
@@ -316,26 +332,114 @@
   }
 }
 
-/* Dark, minimalistic theme overrides */
+/* Cyberpunk Neon Dark Theme */
 [data-theme='dark'] {
-  --ifm-background-color: #0a0a0a;
-  --ifm-background-surface-color: #1a1a1a;
-  --ifm-global-card-background-color: #1a1a1a;
-  --ifm-color-emphasis-0: #0a0a0a;
-  --ifm-color-emphasis-100: #1a1a1a;
-  --ifm-color-emphasis-200: #2a2a2a;
-  --ifm-color-emphasis-300: #3a3a3a;
+  --ifm-background-color: #000000;
+  --ifm-background-surface-color: #0a0a0a;
+  --ifm-global-card-background-color: #0a0a0a;
+  --ifm-color-emphasis-0: #000000;
+  --ifm-color-emphasis-100: #0a0a0a;
+  --ifm-color-emphasis-200: #1a1a1a;
+  --ifm-color-emphasis-300: #2a2a2a;
   --ifm-color-emphasis-700: #a0a0a0;
   --ifm-color-emphasis-900: #e0e0e0;
-  --ifm-color-primary: #7877c6;
-  --ifm-color-primary-dark: #6366f1;
+  --ifm-color-primary: #00ffff;
+  --ifm-color-primary-dark: #00e6e6;
   --ifm-text-color: #e0e0e0;
-  --ifm-heading-color: #ffffff;
-  --ifm-link-color: #9b9acf;
-  --ifm-link-hover-color: #7877c6;
-  --ifm-code-background: #252525;
+  --ifm-heading-color: #00ffff;
+  --ifm-link-color: #00ffff;
+  --ifm-link-hover-color: #ff00ff;
+  --ifm-code-background: #0a0a0a;
+  --ifm-navbar-background-color: rgba(0, 0, 0, 0.95);
+  --ifm-navbar-shadow: 0 1px 20px rgba(0, 255, 255, 0.3);
 }
 
 html[data-theme='dark'] {
-  background-color: #0a0a0a;
+  background-color: #000000;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 255, 255, 0.03) 0px,
+      transparent 1px,
+      transparent 40px,
+      rgba(0, 255, 255, 0.03) 41px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 0, 255, 0.03) 0px,
+      transparent 1px,
+      transparent 40px,
+      rgba(255, 0, 255, 0.03) 41px
+    );
+}
+
+/* Neon glow on links */
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 8px currentColor;
+}
+
+/* Animated gradient backgrounds for cards */
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5),
+                0 0 10px rgba(0, 255, 255, 0.3),
+                0 0 15px rgba(0, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8),
+                0 0 20px rgba(0, 255, 255, 0.5),
+                0 0 30px rgba(0, 255, 255, 0.3);
+  }
+}
+
+/* Button neon effects */
+.button--primary {
+  background: linear-gradient(135deg, #00ffff 0%, #0080ff 100%);
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5),
+              0 0 20px rgba(0, 255, 255, 0.3),
+              inset 0 0 10px rgba(0, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.button--primary:hover {
+  background: linear-gradient(135deg, #00ffff 0%, #00ccff 100%);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.8),
+              0 0 30px rgba(0, 255, 255, 0.5),
+              inset 0 0 15px rgba(0, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.button--secondary {
+  background: linear-gradient(135deg, #ff00ff 0%, #8000ff 100%);
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5),
+              0 0 20px rgba(255, 0, 255, 0.3),
+              inset 0 0 10px rgba(255, 0, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.button--secondary:hover {
+  background: linear-gradient(135deg, #ff00ff 0%, #ff00cc 100%);
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.8),
+              0 0 30px rgba(255, 0, 255, 0.5),
+              inset 0 0 15px rgba(255, 0, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Code blocks with neon border */
+pre {
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+/* Navbar neon underline effect */
+.navbar__link--active {
+  color: #00ffff !important;
+  border-bottom: 2px solid #00ffff;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
 }

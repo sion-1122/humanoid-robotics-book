@@ -8,18 +8,18 @@ import styles from './LandingPage.module.css';
 
 const features = [
   {
-    title: 'Interactive Learning',
-    description: 'Ask questions in natural language and get instant, context-aware answers from the book content.',
+    title: 'Neural Interface Learning',
+    description: 'Query the knowledge matrix in natural language. Receive instantaneous, context-synthesized responses from the collective intelligence.',
     icon: '💬',
   },
   {
-    title: 'Deep Content Understanding',
-    description: 'Our RAG-powered chatbot understands the nuances of the book, providing accurate and relevant information.',
+    title: 'Quantum Content Processing',
+    description: 'RAG-enhanced neural networks decode complex robotics architectures, delivering precision-engineered insights on demand.',
     icon: '🧠',
   },
   {
-    title: 'Query Selected Text',
-    description: 'Highlight any text on the page to ask focused questions and get explanations on specific concepts.',
+    title: 'Targeted Knowledge Extraction',
+    description: 'Isolate specific data nodes for deep analysis. Highlight any passage to unlock granular technical breakdowns.',
     icon: '📌',
   },
 ];
