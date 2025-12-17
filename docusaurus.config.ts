@@ -8,12 +8,12 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://growwidtalha.github.io',
+  url: 'https://sion-1122.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/humanoid-robotics-ebook',
+  baseUrl: '/humanoid-robotics-book',
 
   // GitHub pages deployment config.
-  organizationName: 'GrowWidTalha', // Usually your GitHub org/user name.
+  organizationName: 'sion-1122', // Usually your GitHub org/user name.
   projectName: 'humanoid-robots-book', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -41,7 +41,7 @@ const config = {
         docs: {
           routeBasePath: '/', // Serve docs from the root
           sidebarPath: require.resolve('./sidebars.ts'),
-          editUrl: "https://github.com/GrowWidTalha/humanoid-robotics-ebook/tree/main",
+          editUrl: "https://github.com/sion-1122/humanoid-robotics-book/tree/main",
           // Removed invalid "markdown" option
           // Removed homePageId as it's deprecated
         },
